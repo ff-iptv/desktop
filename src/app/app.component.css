@@ -1,0 +1,58 @@
+:host {
+    --header-height: 40px;
+    --nav-width: 400px;
+}
+
+:host>header {
+    text-align: right;
+    height: var(--header-height);
+}
+
+:host>nav {
+    position: fixed;
+    height: 100vh;
+    width: var(--nav-width);
+    top: 0px;
+    left: 0px;
+    background: black;
+}
+
+:host>section {
+    width: calc(100vw - var(--nav-width));
+    margin-left: var(--nav-width);
+    padding: 20px;
+}
+
+.avaliables box-image,
+.favorite box-image {
+    margin: 10px;
+}
+
+.avaliables header,
+.favorite header {
+    font-size: 35px;
+}
+
+.disappear {
+    max-width: 50px;
+    transition-delay: 2s;
+    transition: all .654s;
+    overflow-x: hidden;
+    display: inline-block;
+    vertical-align: text-bottom;
+    opacity: 1;
+    margin-right: 7px;
+}
+
+.disappear-hidden {
+    max-width: 0px;
+    opacity: 0;
+    margin-right: 0px;
+}
+
+div.logo {
+    padding: 15px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+}

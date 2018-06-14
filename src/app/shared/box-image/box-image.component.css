@@ -1,0 +1,27 @@
+:host {
+    display: inline-block;
+    width: 150px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: width;
+    background-color: black;
+    transition-delay: .2s;    
+ }
+
+:host:hover{
+    width: 300px;
+    /* transition-delay: 2s;     */
+}
+
+legend {
+    color: silver;
+    background: rgba(255,255,255, .15);
+    text-align: center;
+    padding: 5px 0;
+}
+
+img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
