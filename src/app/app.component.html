@@ -1,14 +1,29 @@
 <header>
-    <clock></clock>
+    <div class="logo">
+        <img src="../assets/images/logo.png" width="20" style="vertical-align: sub;" /> 
+        F<span class="disappear" [ngClass]="abbreviation">OR</span>F<span class="disappear" [ngClass]="abbreviation">REE</span> - IPTV
+    </div>
+    <div class="window-control">
+        <button title="minimize" (click)="mngWindow('WINDOW_MINIMIZE', $event)">─</button>
+        <button title="maximize" (click)="mngWindow('WINDOW_MAXIMIZE', $event)">▲</button>
+        <button title="close" close (click)="mngWindow('WINDOW_QUIT', $event)">X</button>
+    </div>
 </header>
 
 <nav>
-    <div class="logo">
-        <img src="../assets/images/logo.png" width="50" style="vertical-align: middle"> F<span class="disappear" [ngClass]="abbreviation">OR</span>F<span class="disappear" [ngClass]="abbreviation">REE</span> - IPTV
-    </div>
+    <ul>
+        <li>
+            <svg viewBox="0 0 32 32">
+                <use xlink:href="assets/svgs/settings-work-tool.svg#Settings"></use>
+             </svg>
+        </li>
+        <li>asdf</li>
+        <li>re</li>
+        <li>ser</li>
+    </ul>
 </nav>
 
-<section hidden>
+<section>
     <section class="favorite">
         <header i18n>Mais Acessados</header>
         <article>
@@ -21,4 +36,3 @@
         </article>
     </section>
 </section>
-<footer></footer>

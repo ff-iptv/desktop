@@ -6,15 +6,16 @@
 
 html,
 body {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'News Cycle', sans-serif;
     color: white;
+    background: black;
 }
 
 body {
-    background: linear-gradient(#3B0F60,#662E93, #3B0F60);
+    /* background: linear-gradient(#3B0F60,#662E93, #3B0F60); */
     overflow-x: hidden;
 }
